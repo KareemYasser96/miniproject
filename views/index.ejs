@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portifolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container" method="GET" action="/project">
+  <h2>Login</h2>
+  <h5>To create a new account, Press the Sign Up button below.</h5>
+    <h5>To login as a Guest, Press the Guest button below.</h5>
+  <form method = "Post" action = "/students/add" >
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" class="form-control" name="username" placeholder="Username">
+    </div>
+    <div class="form-group">
+      <label for="passLabel">Password:</label>
+      <input type="password" class="form-control" name="pass" placeholder="Password">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+    <input type="submit" href = "/students/add" class="btn btn-primary" value ="Sign In">
+    <input type="submit" class="btn btn-success" value ="Sign Up">
+    <input type="submit" class="btn btn-danger" value ="Guest">
+  </form>
+</div>
+
+</body>
+</html>
